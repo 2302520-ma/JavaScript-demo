@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <p>JavaScript Values</p>
+    <h1>JavaScript Numbers</h1>
+    <h3>Number can be written with or without decimals.</h3>
+
+    <p id="demo"></p>
+
+    <script>
+    document.getElementById("demo").innerHTML = 10.50;
+    </script>
+
+    <h1>JavaScript Strings</h1>
+    <h3>Strings can be written with double or single quotes.</h3>
+
+    <p id="demo1"></p>
+
+    <script>
+    document.getElementById("demo1").innerHTML = 'John Doe';
+    </script>
+
+    <h1>JavaScript Variables</h1>
+
+    <p>In this example, x is defined as a variable. Then, x is assigned the value of 6:</p>
+    <p id="demo2"></p>
+
+    <script>
+        let x;
+        x = 6;
+        document.getElementById("demo2").innerHTML = "The value of x is " + x;
+    </script>
+
+    <h1>JavaScript Syntax</h1>
+    <h3>The let and const keywords create variables</h3>
+
+    <p id="demo3"></p>
+
+    <script>
+        let y = 5;
+        const fname = "John";
+        document.getElementById("demo3").innerHTML = fname + " is " + y + " years old.";
+    </script>
+
+
+    <h1>JavaScript Operators</h1>
+    <h2>The Assignment (=) Operator</h2>
+
+    <p>The = operator is used to assign values to variables.</p>
+    <p id="demo4"></p>
+
+    <script>
+        let a = 5;
+        let b = 6;
+        let sum = a + b;
+
+        document.getElementById("demo4").innerHTML = "The sum is " + sum;
+        </script>
+
+    <p>JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+    <p id="demo5"></p>
+
+    <script>
+        document.getElementById("demo5").innerHTML = 5 * 10;
+    </script>
+
+    <h1>JavaScript Expressions</h1>
+    <h2>Expressions Compute to Values</h2>
+    <p id="demo6"></p>
+
+    <script>
+    document.getElementById("demo6").innerHTML = (5 + 6) * 10;
+    </script>
+
+    <p id="demo7"></p>
+
+    <script>
+        var m;
+        m = 5;
+        document.getElementById("demo7").innerHTML = m * 10;
+    </script>
+
+    <p id="demo8"></p>
+
+    <script>
+        document.getElementById("demo8").innerHTML = "John" + " "  + "Doe";
+    </script>
+
+    <h1>JavaScript Comments</h1>
+    <h2>Comments are NOT Executed</h2>
+    <p id="demo9"></p>
+
+    <script>
+        let e;
+        e = 5;
+        // x = 6; I will not be executed
+        document.getElementById("demo9").innerHTML = x;
+    </script>
+
+    <h1>JavaScript Syntax</h1>
+    <h2>JavaScript is Case Sensitive</h2>
+
+    <p>Try to change lastName to lastname.</p>
+    <p id="demo10"></p>
+
+    <script>
+        let lastName = "Doe";
+        let lastname = "Peterson";
+
+        document.getElementById("demo10").innerHTML = lastName;
+    </script>
+
+    </body>
+</html>
