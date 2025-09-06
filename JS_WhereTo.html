@@ -1,3 +1,4 @@
+//The script Tag
 <!DOCTYPE html>
 <html>
 <body>
@@ -13,6 +14,7 @@
 </body>
 </html> 
 
+//JavaScript in head
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,9 +33,18 @@
 </body>
 </html>
 
+//JavaScript in body
 <!DOCTYPE html>
 <html>
     <body>
-        <h2>Demo JavaScript</h2>
+        <h2>Demo JavaScriptin Body</h2>
+        <p id = "demo">A Paragraph</p>
+        <button type="button" onclick="myFunction"()>Try it</button>
+
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Paragraph Changed.";
+            }
+        </script>
     </body>
 </html>
