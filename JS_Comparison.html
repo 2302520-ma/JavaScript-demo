@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript String Operators</h1>
+
+        <p>All conditional operators can be used on both numbers and strings.</p>
+
+        <p id="demo"></p>
+
+        <script>
+            let text1 = "A";
+            let text2= "B";
+            let result = text1< text2;
+            document.getElementById("demo").innerHTML = "Is A less than B? " + result;
+        </script>
+
+        <p>Note that strings are compared alphabetically:</p>
+
+        <p id="demo1"></p>
+
+        <script>
+            let textt1 = "20";
+            let textt2 = "5";
+            let result1 = textt1 < textt2;
+            document.getElementById("demo1").innerHTML = "Is 20 less than 5? " + result1;
+        </script>
+
+        <h2>JavaScript Comparison</h2>
+        <h2>The <= (greater than) or Equal</h2>
+        <p id = "demo2"></p>
+        
+        <script>
+            document.getElementById("demo2").innerHTML = 2 < 12;
+        </script>
+
+        <p id="demo3"></p>
+        <script>
+            document.getElementById("demo3").innerHTML = 2 < "12";
+        </script>
+
+        <p id="demo4"></p>
+        <script>
+            document.getElementById("demo4").innerHTML = 2 < "John";
+        </script>
+
+        <p id="demo5"></p>
+        <script>
+            document.getElementById("demo5").innerHTML = 2 > "John";
+        </script>
+
+        <p id="demo6"></p>
+        <script>
+            document.getElementById("demo6").innerHTML = 2 == "John";
+        </script>
+
+        <p id="demo7"></p>
+        <script>
+            document.getElementById("demo7").innerHTML = "2" < "12";
+        </script>
+
+        <p id="demo8"></p>
+        <script>
+            document.getElementById("demo8").innerHTML = "2" > "12";
+        </script>
+
+        <p id="demo9"></p>
+        <script>
+            document.getElementById("demo9").innerHTML = "2" == "12";
+        </script>
+
+        <h2>JavaScript Comparisons</h2>
+        <p>Input your age and click the button:</p>
+
+        <input id="age" value="18" />
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo10"></p>
+
+        <script>
+            function myFunction() {
+                let voteable;
+                let age = Number(document.getElementById("age").value);
+                if(isNaN(age)) {
+                    voteable = "Input is not a number";
+                } else {
+                    voteable = (age<18) ? "Too young" : "old enough";
+                }
+                document.getElementById("demo10").innerHTML = voteable + " to vote";
+            }
+        </script>
+
+
+
+
+    </body>
+</html>
