@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Control Flow</h1>
+        <h2>The switch Statement</h2>
+
+        <p id="demo"></p>
+
+        <script>
+            let day;
+            let date = new Date().getDay();
+
+            switch(date) {
+                case 0: 
+                    day = "Sunday";
+                    break;
+                case 1: 
+                    day = "Monday";
+                    break;
+                case 2: 
+                    day = "Tuesday";
+                    break;
+                case 3: 
+                    day = "Wednesday";
+                    break;
+                case 4: 
+                    day = "Thursday";
+                    break;
+                case 5: 
+                    day = "Friday";
+                    break;
+                case 6: 
+                    day = "Saturday";
+                    break;
+            }
+        document.getElementById("demo").innerHTML = "Today is " + day;
+        </script>
+
+        <h2>The default Keyword</h2>
+        <p id="demo1"></p>
+
+        <script>
+            let text;
+
+            switch (new Date().getDay()) {
+                case 6:
+                    text = "Today is Saturday";
+                    break;
+                case 0:
+                    text = "Today is Sunday";
+                default:
+                    text = "Looking forward to the weekend";
+            }
+            document.getElementById("demo1").innerHTML = text;
+        </script>
+
+        <p><b>The default case does not have to be the last case in a switch block.</b></p>
+        <p id="demo2"></p>
+
+        <script>
+            let text2;
+
+            switch (new Date().getDay()) {
+                default:
+                    text2 = "Looking forward to the weekend";
+                    break;
+                case 6:
+                    text2 = "Today is Saturday";
+                    break;
+                case 0:
+                    text2 = "Today is Sunday";
+            }
+            document.getElementById("demo2").innerHTML = text2;
+        </script>
+
+        <h2>Common Code Blocks</h2>
+        <p>In this example, case 4 and 5 share the same code block, and 0 and 6 share another code block:</p>
+
+        <p id="demo3"></p>
+
+        <script>
+            let text3;
+            switch (new Date().getDay()) {
+                
+                case 4:
+                case 5:
+                    text3 = "Soon it is weekend"               
+                case 0:
+                case 6:
+                    text3 = "It is weekend";
+                    break;
+                default:
+                    text3 = "Looking forward to the weekend";
+            }
+            document.getElementById("demo3").innerHTML = text3;
+        </script>
+
+        <h3>strict comparison (===).</h3>
+        <p>In this example there is no match for x:</p>
+
+        <p id="demo4"></p>
+
+        <script>
+            let x4= "0";
+
+            switch (x4) {
+                case 0:
+                    text4 = "Off";
+                    break;
+                case 1: 
+                    text4 = "On";
+                    break;
+                default:
+                    text4 = "No Value Found";
+            }
+        document.getElementById("demo4").innerHTML = text4;
+        </script>
+
+    </body>
+</html>
