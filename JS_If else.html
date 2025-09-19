@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+    <h1>JavaScript if .. else</h1>
+
+    <p>A time-based greeting:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const hour = new Date().getHours();
+        let greeting;
+
+        if (hour <18) {
+            greeting = "Good day!";
+        } else {
+            greeting = "Good Evening";
+        }
+
+        document.getElementById("demo").innerHTML = greeting;
+    </script>
+
+    <p>A time-based greeting:</p>
+
+    <p id="demo1"></p>
+    <script>
+        const time = new Date().getHours();
+        let greeting1;
+        if (time < 10) {
+            greeting1 = "Good morning";
+        } else if (time < 20) {
+            greeting1 = "Good day"
+        } else {
+            greeting1 = "Good Evening"
+        }
+        document.getElementById("demo1").innerHTML = greeting1;
+    </script>
+
+    <h2>JavaScript Math.random()</h2>
+
+    <p id="demo2"></p>
+
+    <script>
+        let text2;
+        if (Math.random()<0.5) {
+            text2 = "<a href='https://w3schools.com'>Visit W3Schools</a>";
+        } else {
+            text2 = "<a href='https://wwf.org'>Visit WWF</a>";
+        }
+        document.getElementById("demo2").innerHTML = text2;
+    </script>
+    </body>
+</html>
