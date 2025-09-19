@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Javascript Ternary Operator</h1>
+        <p id="demo"></p>
+
+        <script>
+            let age =18;
+            let text = (age<18) ? "Adult" : "Minor";
+
+            document.getElementById("demo").innerHTML=text;
+        </script>
+
+        <p id="demo1"></p>
+
+        <script>
+            let price =10;
+            let isMember = true;
+            let discount = isMember ? 0.2 : 0;
+            let total = 10 - (price * discount)
+
+            document.getElementById("demo1").innerHTML = total;
+        </script>
+
+        <p id="demo2"></p>
+
+        <script>
+            let price2 =10;
+            let isMember2 = false;
+            let discount2 = isMember2 ? 0.2 : 0;
+            let total2 = 10 - (price2 * discount2)
+
+            document.getElementById("demo2").innerHTML = total2;
+        </script>
+    </body>
+</html>
