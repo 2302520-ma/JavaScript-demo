@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Javascript If</h1>
+        <p>Display "Good day!" if the hour is less than 18:00:</p>
+
+        <p id="demo">Good Evening!</p>
+
+        <script>
+            if (new Date().getHours() < 18) {
+            document.getElementById("demo").innerHTML = "Good day!";
+            }
+        </script>
+
+        <p id="demo1"></p>
+
+        <script>
+            let age = 18;
+            let text = "You can Not drive!";
+
+            if (age >= 18) {
+            text = "You can drive!";
+            }
+
+            document.getElementById("demo1").innerHTML = text;
+        </script>
+
+        <p id="demo2"></p>
+
+        <script>
+            let age2 = 16;
+            let text2 = "You can Not drive!";
+
+            if (age >= 18) {
+            text = "You can drive!";
+            }
+
+            document.getElementById("demo2").innerHTML = text2;
+        </script>
+
+        <h1>Nested If</h1>
+
+        <p id="demo3"></p>
+
+        <script>
+            let age3 = 16;
+            let country = "USA";
+            let text3 = "You can Not drive!";
+
+            if (country == "USA") {
+                if (age3 >= 16) {
+                    text3 = "You can drive!!";
+                }
+            }
+
+            document.getElementById("demo3").innerHTML = text3;
+        </script>
+
+        <p><b>the logical AND operator:</b></p>
+        <p id = demo4></p> 
+        
+        <script>
+            let age4 = 16;
+            let country4 = "USA";
+            let text4 = "You can Not drive!";
+
+            if (country == "USA" && age >= 16) {
+                text4 = "You can drive!!!";
+            }
+
+            document.getElementById("demo4").innerHTML= text4;
+        </script>
+    </body>
+</html>
