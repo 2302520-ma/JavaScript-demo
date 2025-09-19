@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Boolean</h1>
+        <h2>Use Case: Equality</h2>
+
+        <p id="demo"></p>
+
+        <script>
+            let x = 5;
+            document.getElementById("demo").innerHTML = (x == 8);
+        </script>
+
+        <h1>JavaScript Boolean Conditions</h1>
+        <h2>Use Case: if .. else</h2>
+
+        <p id="demo1"></p>
+
+        <script>
+            const hour = new Date().getHours(); 
+            let greeting;
+
+        if (hour < 18) {
+            greeting = "Good day!";
+        } else {
+            greeting = "Good evening!";
+        }
+
+        document.getElementById("demo1").innerHTML = greeting;
+        </script>
+
+        <h2>Use Case: While Loop</h2>
+        <p id="demo2"></p>
+
+        <script>
+            let text = "";
+            let i = 1;
+
+            while (i < 10) {
+                text += i;
+                i++;
+            }
+            document.getElementById("demo2").innerHTML = text;
+        </script>
+
+        <b>You can use the Boolean() function to find out if an expression (or a variable) is true:</b>
+        <p>Display the value of Boolean(10 > 9):</p>
+
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <script>
+            document.getElementById("demo3").innerHTML = Boolean(10 > 9);
+            document.getElementById("demo4").innerHTML = (10 > 9);
+        </script>
+
+        <b>Everything With a "Value" is True</b>
+        <p id="demo5"></p>
+
+        <script>
+            document.getElementById("demo5").innerHTML = 
+            "100 is " + Boolean(100) + "<br>" +
+            "3.14 is " + Boolean(3.14) + "<br>" +
+            "-15 is " + Boolean(-15) + "<br>" +
+            '"Hello" is ' + Boolean("Hello") + "<br>" +
+            "'false' is " + Boolean('false') + "<br>" +
+            "(1 + 7 + 3.14) is " + Boolean(1 + 7 + 3.14);
+        </script>
+
+        <b>Everything Without a "Value" is False</b>
+        <p>Display the Boolean value of 0:</p>
+
+        <p id="demo6"></p>
+
+        <script>
+            let x6 =0;
+            document.getElementById("demo6").innerHTML = Boolean(x6);
+        </script>
+
+        <b>The Boolean value of -0 (minus zero) is false:</b>
+        <p>Display the Boolean value of  -0:</p>
+
+        <p id="demo7"></p>
+
+        <script>
+            let x7 = -0;
+            document.getElementById("demo7").innerHTML = Boolean(x7);
+        </script>
+
+        <b>The Boolean value of "" (empty string) is false:</b>
+        <p>Display the Boolean value of  "":</p>
+
+        <p id="demo8"></p>
+
+        <script>
+            let x8 = "";
+            document.getElementById("demo8").innerHTML = Boolean(x8);
+        </script>
+
+        <b>The Boolean value of undefined is false:</b>
+        <p>Display the Boolean value of x undefined:</p>
+
+        <p id="demo9"></p>
+
+        <script>
+            let x9;
+            document.getElementById("demo9").innerHTML = Boolean(x9);
+        </script>
+
+        <b>The Boolean value of null is false:</b>
+        <p>Display the Boolean value of null:</p>
+
+        <p id="demo10"></p>
+
+        <script>
+            let x10 = null;
+            document.getElementById("demo10").innerHTML = Boolean(x10);
+        </script>
+
+        <b>The Boolean value of false is (you guessed it) false:</b>
+        <p>Display the Boolean value of false:</p>
+
+        <p id="demo11"></p>
+
+        <script>
+            let x11 = false;
+            document.getElementById("demo11").innerHTML = Boolean(x11);
+        </script>
+
+        <b>The Boolean value of NaN is false:</b>
+        <p>Display the Boolean value of NaN:</p>
+
+        <p id="demo12"></p>
+
+        <script>
+            let x12 = 10 / "Hell0";
+            document.getElementById("demo12").innerHTML = Boolean(x12);
+        </script>
+
+        <p>Booleans and Boolean objects cannot be safely compared:</p>
+
+        <p id="demo13"></p>
+
+        <script>
+            let x13 = false; //x is a boolean
+            let y13 = new Boolean(false);
+
+            document.getElementById("demo13").innerHTML = typeof x13 + "<br>" + typeof y13;
+        </script>
+
+    </body>
+</html>
